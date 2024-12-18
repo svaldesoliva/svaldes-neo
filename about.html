@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - 💻 svaldes's personal blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>💻 svaldes's personal blog</h1>
+    <!-- Barra de Navegación -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="interests.html">Interests</a> |
+        <a href="about.html">About Me</a> |
+        <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-37491-59">Guestbook</a>
+
+    </nav>
+    <h2>About Me</h2>
+    <p><a href="resources/ics/bday.ics" download="svlades's bday.ics">My birthday</a> is December 16th, and I was born in 2004.</p>
+    <p>If you wanna contact me just <a href="mailto:s.valdesoliva@icloud.com?subject=svaldes%20-%20">email me</a>.</p>
+    
+    
+    
+    
+    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarContainer = document.getElementById('navbar');
+            fetch('navbar.html')  <!-- Aquí cambia la ruta -->
+                .then(response => response.text())
+                .then(data => navbarContainer.innerHTML = data)
+                .catch(error => console.error('Error loading navbar:', error));
+        });
+    </script>
+    
+    
+</body>
+</html>

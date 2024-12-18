@@ -1,0 +1,95 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+   html, body {
+    height: 100%; /* Asegura que la página ocupe toda la altura de la ventana */
+    margin: 10;
+    padding: 10;
+    display: flex;
+    flex-direction: column; /* Flexbox para organizar bloques en columna */
+  }
+  
+  body {
+    background-color: #fef7e7;
+    color: black;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  /* Regular */
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Bold */
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Italic */
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  /* Bold Italic */
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  #blog-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #blog-list li {
+    margin: 10px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .date {
+    font-size: 0.9em;
+    color: #888;
+    margin-left: 10px;
+  }
+  
+  #badges {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px; /* Espacio entre badges */
+    justify-content: center; /* Centra los badges */
+    align-items: center; /* Alinea los badges verticalmente */
+  }
+  
+  #badges img {
+    height: 24px; /* Ajusta la altura del badge */
+    width: auto;  /* Mantén las proporciones */
+    transition: transform 0.2s ease-in-out; /* Animación al pasar el mouse */
+  }
+  
+  #badges img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+  }
+  
+  main {
+    flex: 1; /* El contenido principal ocupa el espacio disponible */
+  }
+  
+  footer {
+    margin-top: auto; /* Asegura que el footer quede al final */
+    text-align: center;
+    padding: 10px 0; /* Espaciado opcional para el texto */
+  }
+  

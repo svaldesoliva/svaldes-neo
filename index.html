@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💻 svaldes's personal blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado Principal -->
+    <header>
+        <h1>💻 svaldes's personal blog</h1>
+
+    </header>
+
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="interests.html">Interests</a> |
+        <a href="about.html">About Me</a> |
+        <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-37491-59">Guestbook</a>
+    
+    </nav>
+    
+    <h2>Home</h2>
+    <p>Welcome to my personal site where I will be posting about my interests and stuff. 😸
+    <br> You can find out more about me in the other tabs, here i will display my blog entries.
+    </p>
+
+    <!-- Sección de Entradas del Blog -->
+    <main>
+        <h2>Latest Blog Entries</h2>
+        <ul id="blog-list">
+            <!-- Este contenedor será rellenado dinámicamente por script.js -->
+        </ul>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 svaldes.</p>
+      <div id="badges">
+          <!-- Badge de Neocities -->
+          <a href="https://neocities.org">
+              <img src="https://img.shields.io/badge/Hosted_on-Neocities-blue" alt="Hosted on Neocities">
+          </a>
+          <!-- Badge de HTML -->
+          <img src="https://img.shields.io/badge/Made_with-HTML5-orange" alt="Made with HTML5">
+          <!-- Badge de CSS -->
+          <img src="https://img.shields.io/badge/Styled_with-CSS3-blue" alt="Styled with CSS3">
+          <!-- Badge de JavaScript -->
+          <img src="https://img.shields.io/badge/Powered_by-JavaScript-yellow" alt="Powered by JavaScript">
+      </div>
+  </footer>
+  
+    <!-- Script de JavaScript -->
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarContainer = document.getElementById('navbar');
+            fetch('navbar.html')  // Aquí la ruta es correcta ya que navbar.html está en el mismo directorio
+                .then(response => response.text())
+                .then(data => navbarContainer.innerHTML = data)
+                .catch(error => console.error('Error loading navbar:', error));
+        });
+    </script>
+    
+    
+</body>
+</html>
