@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Lista de entradas (simulada o cargada dinámicamente desde un archivo JSON)
     const entradas = [
         { file: "entradas/2024-11-23.html", date: "2024-11-23", title: "first post!" },
+        { file: "entradas/2024-12-18.html", date: "2024-12-18", title: "mover esta wea a hugo es imposible" },
+
 
 
     ];
